@@ -1,0 +1,129 @@
+
+/* Inicil da definiçao de fonte */
+@font-face {
+    font-family: "Unbounded";
+    src: url("../fontes/Unbounded-Bold.ttf") 
+    format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fontes/Poppins-Regular.ttf") 
+    format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+/* Final da definição de fonte */
+
+/* Criação de classes para indicar no html  */
+.cor-roxa{
+   color:#9747FF;
+} 
+.cor-branca{
+     color:#FFFFFF;
+}
+/* ----------------------------------------- */
+
+/* ressete de margem do navegador padrão */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Final do resete de margem do navegador padrão */
+
+/* Cor de fundo do site */
+body {
+    background-color:#0e1014;
+}
+/* ------------------------ */
+
+/* Tipo de display e definição de margens do logo da empresa */
+header img{
+    display: block;
+    margin: 75px 0 0 300px;
+}
+/* -------------------------------------------------------------- */
+
+/* Defininição da fonte baixada, tamanho da fonte,centralização da fonte e definição da distancia da margem da altura do titulo h1*/
+h1{
+    font-size: 64px;
+    font-family:"Unbounded",sans-serif;
+    text-align: center;
+    margin-top: 60px;
+}
+/* ------------------------------------------------------------------------- */
+/* 
+Defininição da fonte baixada, tamanho da fonte,centralização da fonte,definição da distancia da margem da altura, definição da distancia entra a broda do site e a margen de definic1ão automatica */
+p{
+    margin-top: 24px;
+    font-size: 24px;
+    font-family: "Poppins",sans-serif;
+    text-align: center;
+    width: 792px;
+    margin: 24px auto;
+}
+/* ---------------------------------------------------------------------------- */
+a{
+    font-family: "Poppins",sans-serif;
+    font-size: 24px;
+    text-decoration:none; /* propriedade CSS usada para remover sublinhados, tachados ou outras decorações de texto aplicadas pelo navegador para links*/
+    background-color:#9747FF;
+    width: 340px;
+    height: 66px;
+    display: block; /* passar para o navegador que o estilo dele é de bloco assim ele permite eu determinar altura e largura por padrao ele vem como line*/
+    text-align: center; /* determinar que meu texto deve estar centralizado */
+    line-height: 66px; /* centralixar o texto verticalmente passando a altura total do botao obs: passei o mesmo valor da height */
+    border-radius: 36px;
+    margin: 40px auto;
+ /*    margin-left: 680px;
+    margin-right: 680px; */
+}
+a:hover{
+    background-color:#8233E8;
+}
+section img{
+    display: block;
+    margin: 0px auto;
+    width: 792px;
+    height: 446px;
+}
+
+
+/*--------------------------------------------- Adaptar layout para dispositivo movel --------------------------------------------*/
+/* max-width comando para falar para o navegador quado ele chegar no tamanho maximo de....768px fass tal coisa */
+@media(max-width:768px){
+    header img{
+        margin: 65px 0 0 60px;
+    }
+    p{
+        width: 648px;
+    }
+    section img{
+        width: 648px;
+        height: 432px;
+    }
+
+}
+@media(max-width:375px){
+    header img{
+        margin: 32px 0 0 16px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 20px;
+        width: 341px;
+    }
+    a{
+        font-size: 20px;
+        width: 251px;
+    }
+    section img{
+        width: 340px; /* alterar a largura da imagem dos celulares */
+        height: 230px; /* alterar alutra da imagem dos celulares */
+    }
+}
